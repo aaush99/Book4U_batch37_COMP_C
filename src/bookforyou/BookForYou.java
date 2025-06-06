@@ -3,7 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package bookforyou;
-
+import View.SignUp;
+import controller.SignUpController;
 /**
  *
  * @author Nitro
@@ -15,6 +16,10 @@ public class BookForYou {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        SignUp signup = new SignUp();
+        SignUpController contr = new SignUpController(signup);
+        contr.open();
     }
     
 }
