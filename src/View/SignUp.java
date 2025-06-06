@@ -30,6 +30,11 @@ public class SignUp extends javax.swing.JFrame {
         jPasswordField2 = new javax.swing.JPasswordField();
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        book4ulogo = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         usernameLabel = new javax.swing.JLabel();
         UsernameText = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -40,12 +45,12 @@ public class SignUp extends javax.swing.JFrame {
         EmailText = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         Password = new javax.swing.JPasswordField();
-        book4ulogo = new javax.swing.JLabel();
         SignInBtn = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         SignUpBtn2 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
 
         jPasswordField2.setText("jPasswordField2");
 
@@ -53,12 +58,18 @@ public class SignUp extends javax.swing.JFrame {
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
 
+        book4ulogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/86e9c178dfec4dcd38c958a24734312006b04bf2.jpg"))); // NOI18N
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 102, 0));
         setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        usernameLabel.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        usernameLabel.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         usernameLabel.setForeground(new java.awt.Color(102, 0, 0));
         usernameLabel.setText("Username");
         getContentPane().add(usernameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 111, 136, -1));
@@ -81,7 +92,7 @@ public class SignUp extends javax.swing.JFrame {
         getContentPane().add(UsernameText, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 139, 221, -1));
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(499, 293, 37, -1));
 
-        emailLabel.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        emailLabel.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         emailLabel.setForeground(new java.awt.Color(102, 0, 0));
         emailLabel.setText("Email");
         getContentPane().add(emailLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 168, 65, -1));
@@ -101,16 +112,16 @@ public class SignUp extends javax.swing.JFrame {
                 PhonenumberActionPerformed(evt);
             }
         });
-        getContentPane().add(Phonenumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 312, 222, -1));
+        getContentPane().add(Phonenumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 222, -1));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 0, 0));
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 387, 144, -1));
 
-        phonenumberLabel.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        phonenumberLabel.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         phonenumberLabel.setForeground(new java.awt.Color(102, 0, 0));
         phonenumberLabel.setText("Phone number");
-        getContentPane().add(phonenumberLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 287, 120, -1));
+        getContentPane().add(phonenumberLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 287, 140, -1));
 
         EmailText.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         EmailText.setText("Enter your email");
@@ -124,7 +135,7 @@ public class SignUp extends javax.swing.JFrame {
         });
         getContentPane().add(EmailText, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 193, 222, -1));
 
-        jLabel6.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(102, 0, 0));
         jLabel6.setText("Password");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 228, 113, -1));
@@ -137,10 +148,7 @@ public class SignUp extends javax.swing.JFrame {
         });
         getContentPane().add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 253, 222, -1));
 
-        book4ulogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/86e9c178dfec4dcd38c958a24734312006b04bf2.jpg"))); // NOI18N
-        getContentPane().add(book4ulogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 200, 180));
-
-        SignInBtn.setBackground(new java.awt.Color(255, 102, 0));
+        SignInBtn.setBackground(new java.awt.Color(255, 204, 204));
         SignInBtn.setText("Sign In");
         SignInBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,27 +157,31 @@ public class SignUp extends javax.swing.JFrame {
         });
         getContentPane().add(SignInBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 440, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 30)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Lucida Fax", 1, 35)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 102, 0));
         jLabel7.setText("Book4U");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 117, 50));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 150, 50));
 
-        SignUpBtn2.setBackground(new java.awt.Color(255, 102, 0));
+        SignUpBtn2.setBackground(new java.awt.Color(255, 204, 204));
         SignUpBtn2.setText("SignUp");
         SignUpBtn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SignUpBtn2ActionPerformed(evt);
             }
         });
-        getContentPane().add(SignUpBtn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 350, -1, -1));
+        getContentPane().add(SignUpBtn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(102, 0, 0));
         jLabel9.setText("Already have an account?");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 410, -1, -1));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 400, -1, -1));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(-310, -170, 1010, 680));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Screenshot 2025-06-06 162836.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 230, 520));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Screenshot 2025-06-06 151504.png"))); // NOI18N
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 490, 510));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -282,10 +294,15 @@ public class SignUp extends javax.swing.JFrame {
     private javax.swing.JTextField UsernameText;
     private javax.swing.JLabel book4ulogo;
     private javax.swing.JLabel emailLabel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;

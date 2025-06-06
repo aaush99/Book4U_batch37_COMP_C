@@ -34,16 +34,33 @@ public class Login extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jProgressBar1 = new javax.swing.JProgressBar();
+        book4ulogo = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        book4ulogo1 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        label1 = new java.awt.Label();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
         emailLabel = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         Emailtext = new javax.swing.JTextField();
         Passwordfield = new javax.swing.JPasswordField();
-        book4ulogo = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         SignupBtn = new javax.swing.JButton();
         LoginBtn = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
 
         jTextField2.setText("jTextField2");
 
@@ -59,18 +76,41 @@ public class Login extends javax.swing.JFrame {
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
 
+        book4ulogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/86e9c178dfec4dcd38c958a24734312006b04bf2.jpg"))); // NOI18N
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Screenshot 2025-06-06 151504.png"))); // NOI18N
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
+
+        book4ulogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/86e9c178dfec4dcd38c958a24734312006b04bf2.jpg"))); // NOI18N
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
+
+        label1.setText("label1");
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Screenshot 2025-06-06 151504.png"))); // NOI18N
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a_1.jpg"))); // NOI18N
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 102, 0));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        emailLabel.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        emailLabel.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         emailLabel.setForeground(new java.awt.Color(102, 0, 0));
         emailLabel.setText("Email");
-        getContentPane().add(emailLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(302, 125, 54, -1));
+        getContentPane().add(emailLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 54, -1));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 0, 0));
         jLabel2.setText("Password");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(302, 230, 73, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 100, -1));
 
         Emailtext.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         Emailtext.setText("Enter your Email");
@@ -82,7 +122,7 @@ public class Login extends javax.swing.JFrame {
                 EmailtextFocusLost(evt);
             }
         });
-        getContentPane().add(Emailtext, new org.netbeans.lib.awtextra.AbsoluteConstraints(302, 150, 242, -1));
+        getContentPane().add(Emailtext, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 242, -1));
 
         Passwordfield.setText("jPasswordField1");
         Passwordfield.addActionListener(new java.awt.event.ActionListener() {
@@ -90,40 +130,51 @@ public class Login extends javax.swing.JFrame {
                 PasswordfieldActionPerformed(evt);
             }
         });
-        getContentPane().add(Passwordfield, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 242, -1));
+        getContentPane().add(Passwordfield, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 242, -1));
 
-        book4ulogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/86e9c178dfec4dcd38c958a24734312006b04bf2.jpg"))); // NOI18N
-        getContentPane().add(book4ulogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 200, 180));
-
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Lucida Bright", 1, 13)); // NOI18N
         jLabel3.setText("Forgot password?");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, 117, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 117, -1));
 
-        SignupBtn.setBackground(new java.awt.Color(255, 102, 0));
+        SignupBtn.setBackground(new java.awt.Color(255, 153, 0));
+        SignupBtn.setFont(new java.awt.Font("Lucida Fax", 0, 12)); // NOI18N
         SignupBtn.setText("Sign up");
         SignupBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SignupBtnActionPerformed(evt);
             }
         });
-        getContentPane().add(SignupBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 320, -1, -1));
+        getContentPane().add(SignupBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 350, -1, -1));
 
-        LoginBtn.setBackground(new java.awt.Color(255, 102, 0));
+        LoginBtn.setBackground(new java.awt.Color(255, 153, 51));
+        LoginBtn.setFont(new java.awt.Font("Lucida Fax", 0, 12)); // NOI18N
         LoginBtn.setText("Login");
         LoginBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LoginBtnActionPerformed(evt);
             }
         });
-        getContentPane().add(LoginBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 320, -1, -1));
+        getContentPane().add(LoginBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 350, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 33)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Lucida Fax", 1, 35)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 102, 0));
         jLabel9.setText("Book4U");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(-310, -170, 1010, 680));
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Screenshot 2025-06-06 162836.png"))); // NOI18N
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 500));
+
+        jLabel22.setFont(new java.awt.Font("Lucida Fax", 0, 55)); // NOI18N
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(-260, 0, 960, 510));
+
+        jLabel23.setText("jLabel23");
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, -1, -1));
+
+        jLabel24.setText("jLabel24");
+        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 70, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -195,9 +246,25 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPasswordField Passwordfield;
     private javax.swing.JButton SignupBtn;
     private javax.swing.JLabel book4ulogo;
+    private javax.swing.JLabel book4ulogo1;
     private javax.swing.JLabel emailLabel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -207,6 +274,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JTextField jTextField2;
+    private java.awt.Label label1;
     // End of variables declaration//GEN-END:variables
     public void addLoginUserListener(ActionListener listener) {
         LoginBtn.addActionListener(listener);
