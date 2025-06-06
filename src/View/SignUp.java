@@ -3,10 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package View;
+import java.awt.event.ActionListener;
 
 /**
  *
- * @author dell
+ * @author Nitro
  */
 public class SignUp extends javax.swing.JFrame {
 
@@ -26,228 +27,216 @@ public class SignUp extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        backgroundlmage = new javax.swing.JLabel();
-        usernameLabel = new javax.swing.JLabel();
-        usernameText = new javax.swing.JTextField();
-        emailText = new javax.swing.JTextField();
-        emailLabel = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        fullnameLabel = new javax.swing.JLabel();
-        fullnameText = new javax.swing.JTextField();
-        phonenoLabel = new javax.swing.JLabel();
-        phonenoText = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
+        jPasswordField2 = new javax.swing.JPasswordField();
         jLabel8 = new javax.swing.JLabel();
-        book4ulogo = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        jLabel10 = new javax.swing.JLabel();
+        usernameLabel = new javax.swing.JLabel();
+        UsernameText = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
+        emailLabel = new javax.swing.JLabel();
+        Phonenumber = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        phonenumberLabel = new javax.swing.JLabel();
+        EmailText = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        Password = new javax.swing.JPasswordField();
+        book4ulogo = new javax.swing.JLabel();
+        SignInBtn = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        SignUpBtn2 = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
-        jLabel1.setMaximumSize(new java.awt.Dimension(680, 460));
-        jLabel1.setMinimumSize(new java.awt.Dimension(680, 460));
-        jLabel1.setPreferredSize(new java.awt.Dimension(680, 460));
+        jPasswordField2.setText("jPasswordField2");
 
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
 
-        backgroundlmage.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        backgroundlmage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/lgoin background 5.jpg"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(680, 544));
-        setMinimumSize(new java.awt.Dimension(680, 544));
-        setPreferredSize(new java.awt.Dimension(680, 544));
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 102, 0));
+        setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        usernameLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        usernameLabel.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        usernameLabel.setForeground(new java.awt.Color(102, 0, 0));
         usernameLabel.setText("Username");
-        getContentPane().add(usernameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, -1, -1));
+        getContentPane().add(usernameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 111, 136, -1));
 
-        usernameText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        usernameText.setText("Enter the Name");
-        usernameText.addFocusListener(new java.awt.event.FocusAdapter() {
+        UsernameText.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        UsernameText.setText("Enter your user name");
+        UsernameText.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                usernameTextFocusGained(evt);
+                UsernameTextFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                usernameTextFocusLost(evt);
+                UsernameTextFocusLost(evt);
             }
         });
-        getContentPane().add(usernameText, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, 280, -1));
-
-        emailText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        emailText.setText("Enter the Email");
-        emailText.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                emailTextFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                emailTextFocusLost(evt);
-            }
-        });
-        emailText.addActionListener(new java.awt.event.ActionListener() {
+        UsernameText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                emailTextActionPerformed(evt);
+                UsernameTextActionPerformed(evt);
             }
         });
-        getContentPane().add(emailText, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 280, -1));
+        getContentPane().add(UsernameText, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 139, 221, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(499, 293, 37, -1));
 
-        emailLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        emailLabel.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        emailLabel.setForeground(new java.awt.Color(102, 0, 0));
         emailLabel.setText("Email");
-        getContentPane().add(emailLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, 62, -1));
+        getContentPane().add(emailLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 168, 65, -1));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel3.setText("Password");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 180, -1, -1));
-
-        fullnameLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        fullnameLabel.setText("Full name");
-        getContentPane().add(fullnameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, 70, -1));
-
-        fullnameText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        fullnameText.setText("Enter the Full name");
-        fullnameText.addFocusListener(new java.awt.event.FocusAdapter() {
+        Phonenumber.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        Phonenumber.setText("Enter your phone number");
+        Phonenumber.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                fullnameTextFocusGained(evt);
+                PhonenumberFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                fullnameTextFocusLost(evt);
+                PhonenumberFocusLost(evt);
             }
         });
-        fullnameText.addActionListener(new java.awt.event.ActionListener() {
+        Phonenumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fullnameTextActionPerformed(evt);
+                PhonenumberActionPerformed(evt);
             }
         });
-        getContentPane().add(fullnameText, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 280, -1));
+        getContentPane().add(Phonenumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 312, 222, -1));
 
-        phonenoLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        phonenoLabel.setText("Phone no.");
-        getContentPane().add(phonenoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 280, -1, -1));
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(102, 0, 0));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 387, 144, -1));
 
-        phonenoText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        phonenoText.setText("Enter the Phone no.");
-        phonenoText.addFocusListener(new java.awt.event.FocusAdapter() {
+        phonenumberLabel.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        phonenumberLabel.setForeground(new java.awt.Color(102, 0, 0));
+        phonenumberLabel.setText("Phone number");
+        getContentPane().add(phonenumberLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 287, 120, -1));
+
+        EmailText.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        EmailText.setText("Enter your email");
+        EmailText.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                phonenoTextFocusGained(evt);
+                EmailTextFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                phonenoTextFocusLost(evt);
+                EmailTextFocusLost(evt);
             }
         });
-        phonenoText.addActionListener(new java.awt.event.ActionListener() {
+        getContentPane().add(EmailText, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 193, 222, -1));
+
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(102, 0, 0));
+        jLabel6.setText("Password");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 228, 113, -1));
+
+        Password.setText("jPasswordField1");
+        Password.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                phonenoTextActionPerformed(evt);
+                PasswordActionPerformed(evt);
             }
         });
-        getContentPane().add(phonenoText, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 300, 280, -1));
-
-        jButton1.setBackground(new java.awt.Color(255, 102, 0));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton1.setText("Sign Up");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 340, -1, -1));
-
-        jLabel6.setText("Sign Up");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
-
-        jLabel8.setBackground(new java.awt.Color(255, 102, 0));
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 28)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 102, 0));
-        jLabel8.setText("Book4U");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
+        getContentPane().add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 253, 222, -1));
 
         book4ulogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/86e9c178dfec4dcd38c958a24734312006b04bf2.jpg"))); // NOI18N
-        getContentPane().add(book4ulogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 220, 180));
+        getContentPane().add(book4ulogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 200, 180));
 
-        jPasswordField1.setText("jPasswordField1");
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 280, -1));
+        SignInBtn.setBackground(new java.awt.Color(255, 102, 0));
+        SignInBtn.setText("Sign In");
+        SignInBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SignInBtnActionPerformed(evt);
+            }
+        });
+        getContentPane().add(SignInBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 440, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-300, -170, 970, 680));
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 30)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel7.setText("Book4U");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 117, 50));
+
+        SignUpBtn2.setBackground(new java.awt.Color(255, 102, 0));
+        SignUpBtn2.setText("SignUp");
+        SignUpBtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SignUpBtn2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(SignUpBtn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 350, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(102, 0, 0));
+        jLabel9.setText("Already have an account?");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 410, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(-310, -170, 1010, 680));
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void emailTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailTextActionPerformed
+    private void UsernameTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsernameTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_emailTextActionPerformed
+    }//GEN-LAST:event_UsernameTextActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void PhonenumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PhonenumberActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_PhonenumberActionPerformed
 
-    private void phonenoTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phonenoTextActionPerformed
+    private void SignInBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_phonenoTextActionPerformed
+    }//GEN-LAST:event_SignInBtnActionPerformed
 
-    private void fullnameTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fullnameTextActionPerformed
+    private void SignUpBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpBtn2ActionPerformed
+        
         // TODO add your handling code here:
-    }//GEN-LAST:event_fullnameTextActionPerformed
+    }//GEN-LAST:event_SignUpBtn2ActionPerformed
 
-    private void usernameTextFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_usernameTextFocusGained
-        if(usernameText.getText().equals("Enter the Name")){
-        usernameText.setText("");
-    }// TODO add your handling code here:
-    }//GEN-LAST:event_usernameTextFocusGained
-
-    private void usernameTextFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_usernameTextFocusLost
-       if(usernameText.getText(). isEmpty()){
-            usernameText.setText("Enter the Name");
-        } // TODO add your handling code here:
-    }//GEN-LAST:event_usernameTextFocusLost
-
-    private void emailTextFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_emailTextFocusGained
-         if(emailText.getText().equals("Enter the Email")){
-        emailText.setText("");
-    }// TODO add your handling code here:
-    }//GEN-LAST:event_emailTextFocusGained
-
-    private void emailTextFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_emailTextFocusLost
-        if(emailText.getText(). isEmpty()){
-            emailText.setText("Enter the Email");
-        } // TODO add your handling code here:
-    }//GEN-LAST:event_emailTextFocusLost
-
-    private void fullnameTextFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_fullnameTextFocusGained
-         if(fullnameText.getText().equals("Enter the Full name")){
-        fullnameText.setText("");
-    }// TODO add your handling code here:
-    }//GEN-LAST:event_fullnameTextFocusGained
-
-    private void fullnameTextFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_fullnameTextFocusLost
-       if(fullnameText.getText(). isEmpty()){
-            fullnameText.setText("Enter the Full name");
-        } // TODO add your handling code here:
-    }//GEN-LAST:event_fullnameTextFocusLost
-
-    private void phonenoTextFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_phonenoTextFocusGained
-        if(phonenoText.getText().equals("Enter the Phone no.")){
-        phonenoText.setText("");
-    }// TODO add your handling code here:
-    }//GEN-LAST:event_phonenoTextFocusGained
-
-    private void phonenoTextFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_phonenoTextFocusLost
-        if(phonenoText.getText(). isEmpty()){
-            phonenoText.setText("Enter the Phone no.");
-        }// TODO add your handling code here:
-    }//GEN-LAST:event_phonenoTextFocusLost
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void PasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_PasswordActionPerformed
+
+    private void UsernameTextFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_UsernameTextFocusGained
+        // TODO add your handling code here:
+        if(UsernameText.getText().equals("Enter your user name")){
+        UsernameText.setText("");
+}
+    }//GEN-LAST:event_UsernameTextFocusGained
+
+    private void UsernameTextFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_UsernameTextFocusLost
+        // TODO add your handling code here:
+        if(UsernameText.getText().isEmpty()){
+            UsernameText.setText("Enter your user name");
+}
+    }//GEN-LAST:event_UsernameTextFocusLost
+
+    private void EmailTextFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_EmailTextFocusGained
+        // TODO add your handling code here:
+        if(EmailText.getText().equals("Enter your email")){
+        EmailText.setText("");
+}
+        
+    }//GEN-LAST:event_EmailTextFocusGained
+
+    private void EmailTextFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_EmailTextFocusLost
+        // TODO add your handling code here:
+        if(EmailText.getText().isEmpty()){
+           EmailText.setText("Enter your email");
+}
+    }//GEN-LAST:event_EmailTextFocusLost
+
+    private void PhonenumberFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_PhonenumberFocusGained
+        // TODO add your handling code here:
+        if(Phonenumber.getText().equals("Enter your phone number")){
+        Phonenumber.setText("");
+}
+    }//GEN-LAST:event_PhonenumberFocusGained
+
+    private void PhonenumberFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_PhonenumberFocusLost
+        // TODO add your handling code here:
+        if(Phonenumber.getText().isEmpty()){
+           Phonenumber.setText("Enter your phone number");
+}
+    }//GEN-LAST:event_PhonenumberFocusLost
 
     /**
      * @param args the command line arguments
@@ -285,23 +274,56 @@ public class SignUp extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel backgroundlmage;
+    private javax.swing.JTextField EmailText;
+    private javax.swing.JPasswordField Password;
+    private javax.swing.JTextField Phonenumber;
+    private javax.swing.JButton SignInBtn;
+    private javax.swing.JButton SignUpBtn2;
+    private javax.swing.JTextField UsernameText;
     private javax.swing.JLabel book4ulogo;
     private javax.swing.JLabel emailLabel;
-    private javax.swing.JTextField emailText;
-    private javax.swing.JLabel fullnameLabel;
-    private javax.swing.JTextField fullnameText;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JLabel phonenoLabel;
-    private javax.swing.JTextField phonenoText;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPasswordField jPasswordField2;
+    private javax.swing.JLabel phonenumberLabel;
     private javax.swing.JLabel usernameLabel;
-    private javax.swing.JTextField usernameText;
     // End of variables declaration//GEN-END:variables
+
+public void addAddUserListener(ActionListener listener){
+    SignUpBtn2.addActionListener(listener);
 }
+
+public void addLoginListener(ActionListener listener){
+    SignInBtn.addActionListener(listener);
+}
+public javax.swing.JTextField getEmailField() {
+        return EmailText; 
+}
+ public javax.swing.JPasswordField getPasswordField() {
+        return Password;
+    }
+    public javax.swing.JTextField getUsernameField() {
+        return UsernameText;
+    }
+
+    
+    public javax.swing.JTextField getPhonenumber() {
+        return Phonenumber;
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -3,12 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package View;
-
-import javax.swing.JOptionPane;
-
+import java.awt.event.ActionListener;
+import controller.LoginController ;
 /**
  *
- * @author dell
+ * @author Nitro
  */
 public class Login extends javax.swing.JFrame {
 
@@ -28,129 +27,136 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Book4uLabel = new javax.swing.JLabel();
-        loginLabel = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jProgressBar1 = new javax.swing.JProgressBar();
         emailLabel = new javax.swing.JLabel();
-        passwordLabel = new javax.swing.JLabel();
-        emailText = new javax.swing.JTextField();
-        passwordField = new javax.swing.JPasswordField();
-        signupButton = new javax.swing.JButton();
-        loginButton = new javax.swing.JButton();
-        forgotpasswordLabel = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        Emailtext = new javax.swing.JTextField();
+        Passwordfield = new javax.swing.JPasswordField();
         book4ulogo = new javax.swing.JLabel();
-        backgroundlmage = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        SignupBtn = new javax.swing.JButton();
+        LoginBtn = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+
+        jTextField2.setText("jTextField2");
+
+        jLabel4.setText("jLabel4");
+
+        jLabel7.setText("jLabel7");
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
+
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(102, 0, 0));
+        jLabel6.setText("Create new account.");
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Book4uLabel.setFont(new java.awt.Font("Arial", 1, 30)); // NOI18N
-        Book4uLabel.setForeground(new java.awt.Color(255, 102, 0));
-        Book4uLabel.setText("Book4U");
-        getContentPane().add(Book4uLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 155, 40));
-        getContentPane().add(loginLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, -1, -1));
-
-        emailLabel.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        emailLabel.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        emailLabel.setForeground(new java.awt.Color(102, 0, 0));
         emailLabel.setText("Email");
-        getContentPane().add(emailLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, 51, -1));
+        getContentPane().add(emailLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(302, 125, 54, -1));
 
-        passwordLabel.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        passwordLabel.setText("Password");
-        getContentPane().add(passwordLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, -1, -1));
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 0, 0));
+        jLabel2.setText("Password");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(302, 230, 73, -1));
 
-        emailText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        emailText.setText("Enter your email");
-        emailText.addFocusListener(new java.awt.event.FocusAdapter() {
+        Emailtext.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        Emailtext.setText("Enter your Email");
+        Emailtext.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                emailTextFocusGained(evt);
+                EmailtextFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                emailTextFocusLost(evt);
+                EmailtextFocusLost(evt);
             }
         });
-        emailText.addActionListener(new java.awt.event.ActionListener() {
+        getContentPane().add(Emailtext, new org.netbeans.lib.awtextra.AbsoluteConstraints(302, 150, 242, -1));
+
+        Passwordfield.setText("jPasswordField1");
+        Passwordfield.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                emailTextActionPerformed(evt);
+                PasswordfieldActionPerformed(evt);
             }
         });
-        getContentPane().add(emailText, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 310, -1));
-
-        passwordField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        getContentPane().add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(248, 205, 310, -1));
-
-        signupButton.setBackground(new java.awt.Color(255, 102, 0));
-        signupButton.setText("Sign Up");
-        signupButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                signupButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(signupButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, 130, 30));
-
-        loginButton.setBackground(new java.awt.Color(255, 102, 0));
-        loginButton.setText("Login");
-        loginButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loginButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 270, 130, 30));
-
-        forgotpasswordLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        forgotpasswordLabel.setText("Forgot Password?");
-        forgotpasswordLabel.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                forgotpasswordLabelMouseClicked(evt);
-            }
-        });
-        getContentPane().add(forgotpasswordLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 240, -1, -1));
+        getContentPane().add(Passwordfield, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 242, -1));
 
         book4ulogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/86e9c178dfec4dcd38c958a24734312006b04bf2.jpg"))); // NOI18N
-        getContentPane().add(book4ulogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, 184));
+        getContentPane().add(book4ulogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 200, 180));
 
-        backgroundlmage.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        backgroundlmage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/lgoin background 5.jpg"))); // NOI18N
-        getContentPane().add(backgroundlmage, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 680, 480));
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel3.setText("Forgot password?");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, 117, -1));
+
+        SignupBtn.setBackground(new java.awt.Color(255, 102, 0));
+        SignupBtn.setText("Sign up");
+        SignupBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SignupBtnActionPerformed(evt);
+            }
+        });
+        getContentPane().add(SignupBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 320, -1, -1));
+
+        LoginBtn.setBackground(new java.awt.Color(255, 102, 0));
+        LoginBtn.setText("Login");
+        LoginBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LoginBtnActionPerformed(evt);
+            }
+        });
+        getContentPane().add(LoginBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 320, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 33)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel9.setText("Book4U");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(-310, -170, 1010, 680));
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void emailTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailTextActionPerformed
+    private void LoginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_emailTextActionPerformed
+    }//GEN-LAST:event_LoginBtnActionPerformed
 
-    private void signupButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupButtonActionPerformed
-        new SignUp().setVisible(true);  // Open SignUp page
-this.dispose();                 // TODO add your handling code here:
-    }//GEN-LAST:event_signupButtonActionPerformed
-
-    private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
+    private void SignupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignupBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_loginButtonActionPerformed
+    }//GEN-LAST:event_SignupBtnActionPerformed
 
-    private void emailTextFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_emailTextFocusGained
+    private void EmailtextFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_EmailtextFocusGained
         // TODO add your handling code here:
-        if(emailText.getText().equals("Enter your email")){
-        emailText.setText("");
-    }
-    }//GEN-LAST:event_emailTextFocusGained
+        if(Emailtext.getText().equals("Enter your Email")){
+        Emailtext.setText("");
+}
+    }//GEN-LAST:event_EmailtextFocusGained
 
-    private void emailTextFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_emailTextFocusLost
+    private void EmailtextFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_EmailtextFocusLost
         // TODO add your handling code here:
-        if(emailText.getText().isEmpty()){
-            emailText.setText("Enter your email");
+        if(Emailtext.getText().isEmpty()){
+            Emailtext.setText("Enter your Email");
         }
-    }//GEN-LAST:event_emailTextFocusLost
+    }//GEN-LAST:event_EmailtextFocusLost
 
-    private void forgotpasswordLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_forgotpasswordLabelMouseClicked
+    private void PasswordfieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordfieldActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Reset Password page is coming soon!");
-    }//GEN-LAST:event_forgotpasswordLabelMouseClicked
+    }//GEN-LAST:event_PasswordfieldActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -184,16 +190,118 @@ this.dispose();                 // TODO add your handling code here:
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Book4uLabel;
-    private javax.swing.JLabel backgroundlmage;
+    private javax.swing.JTextField Emailtext;
+    private javax.swing.JButton LoginBtn;
+    private javax.swing.JPasswordField Passwordfield;
+    private javax.swing.JButton SignupBtn;
     private javax.swing.JLabel book4ulogo;
     private javax.swing.JLabel emailLabel;
-    private javax.swing.JTextField emailText;
-    private javax.swing.JLabel forgotpasswordLabel;
-    private javax.swing.JButton loginButton;
-    private javax.swing.JLabel loginLabel;
-    private javax.swing.JPasswordField passwordField;
-    private javax.swing.JLabel passwordLabel;
-    private javax.swing.JButton signupButton;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JProgressBar jProgressBar1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
+    public void addLoginUserListener(ActionListener listener) {
+        LoginBtn.addActionListener(listener);
+    }
+     
+    
+    
+    public javax.swing.JTextField getEmailtext() {
+        return Emailtext;
+    }
+
+    public void setEmailtext(javax.swing.JTextField emailtext) {
+        Emailtext = emailtext;
+    }
+
+    public javax.swing.JButton getLoginBtn() {
+        return LoginBtn;
+    }
+
+    public void setLoginBtn(javax.swing.JButton loginBtn) {
+        LoginBtn = loginBtn;
+    }
+
+    public javax.swing.JPasswordField getPasswordfield() {
+        return Passwordfield;
+    }
+
+    public void setPasswordfield(javax.swing.JPasswordField passwordfield) {
+        Passwordfield = passwordfield;
+    }
+
+    public javax.swing.JButton getSignupBtn() {
+        return SignupBtn;
+    }
+
+    public void setSignupBtn(javax.swing.JButton signupBtn) {
+        SignupBtn = signupBtn;
+    }
+
+    public javax.swing.JLabel getBook4ulogo() {
+        return book4ulogo;
+    }
+
+    public void setBook4ulogo(javax.swing.JLabel book4ulogo) {
+        this.book4ulogo = book4ulogo;
+    }
+
+    public javax.swing.JLabel getjLabel1() {
+        return emailLabel;
+    }
+
+    public void setjLabel1(javax.swing.JLabel jLabel1) {
+        this.emailLabel = jLabel1;
+    }
+
+    public javax.swing.JLabel getjLabel2() {
+        return jLabel2;
+    }
+
+    public void setjLabel2(javax.swing.JLabel jLabel2) {
+        this.jLabel2 = jLabel2;
+    }
+
+    public javax.swing.JLabel getjLabel3() {
+        return jLabel3;
+    }
+
+    public void setjLabel3(javax.swing.JLabel jLabel3) {
+        this.jLabel3 = jLabel3;
+    }
+
+    public javax.swing.JLabel getjLabel4() {
+        return jLabel4;
+    }
+
+    public void setjLabel4(javax.swing.JLabel jLabel4) {
+        this.jLabel4 = jLabel4;
+    }
+
+    public javax.swing.JLabel getjLabel5() {
+        return jLabel5;
+    }
+
+    public void setjLabel5(javax.swing.JLabel jLabel5) {
+        this.jLabel5 = jLabel5;
+    }
+
+    public javax.swing.JTextField getjTextField2() {
+        return jTextField2;
+    }
+
+    public void setjTextField2(javax.swing.JTextField jTextField2) {
+        this.jTextField2 = jTextField2;
+    }
+ 
+   
 }
+
