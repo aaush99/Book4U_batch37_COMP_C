@@ -7,6 +7,7 @@ package controller;
 import Dao.UserDao;
 import Model.LoginRequest;
 import Model.UserData;
+import View.AdminDash;
 import View.Dash;
 import View.Login;
 import java.awt.event.ActionEvent;
@@ -39,27 +40,38 @@ public class LoginController {
         @Override
         public void actionPerformed(ActionEvent e) {
             try {
+                String email = userView.getEmailtext().getText().trim();
+                String password = new String(userView.getPasswordfield().getPassword()).trim();
+                
+                if (email.isEmpty() || password.isEmpty()) {
+                    JOptionPane.showMessageDialog(userView, "Please enter both email and password");
+                    return;
+                } 
 
-                String email = userView.getEmailtext().getText();
-                String password = userView.getPasswordfield().getText();
                 LoginRequest user = new LoginRequest(email, password);
-                               System.out.println(email);
+                System.out.println("Login attempt for: " + email);
                                
                 UserData loginUser = userDao.login(user);
                 if (loginUser == null) {
                     JOptionPane.showMessageDialog(userView, "Invalid Credentials");
                 } else {
-                    // success
-                    JOptionPane.showMessageDialog(userView, "Login Successful");
-                    Dash dashboard = new Dash();
-                    dashboard.setVisible(true);
+                    // Check if user is admin
+                    if (userDao.isAdmin(loginUser)) {
+                        JOptionPane.showMessageDialog(userView, "Admin Login Successful");
+                        AdminDash adminDashboard = new AdminDash();
+                        adminDashboard.setVisible(true);
+                    } else {
+                        JOptionPane.showMessageDialog(userView, "Login Successful");
+                        Dash userDashboard = new Dash();
+                        userDashboard.setVisible(true);
+                    }
                     close();
                 }
             } catch (Exception ex) {
-                System.out.println("Error adding user: " + ex.getMessage());
+                System.out.println("Error during login: " + ex.getMessage());
+                JOptionPane.showMessageDialog(userView, "An error occurred during login");
+                ex.printStackTrace();
             }
-            
-            
         }
-    } 
+    }
 }
