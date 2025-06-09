@@ -22,6 +22,7 @@ public class UserDao {
              throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
          }
      };
+    private Object ADMIN_EMAIL;
          
      
     
@@ -102,6 +103,35 @@ public class UserDao {
         return null;
     }
 
-
-
+      
+      
+      
+      public boolean isAdmin(UserData user) {
+        // Option 1: Check against hardcoded admin credentials
+        if (user.getEmail().equals(ADMIN_EMAIL)) {
+            return true;
+        }
+        if (user.getId() == 1) {
+        return true;
+    }
+    
+        // Option 2: Check database flag (preferred)
+        Connection conn = mysql.openConnection();
+        String sql = "SELECT is_admin FROM user WHERE id= ?";
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, user.getId());
+            ResultSet result = pstmt.executeQuery();
+            if (result.next()) {
+                return result.getBoolean("is_admin");
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDao.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            mysql.closeConnection(conn);
+        }
+        return false;
+    }
 }
+
+
+
