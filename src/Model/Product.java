@@ -8,19 +8,38 @@ package Model;
  *
  * @author Nitro
  */
-public class ProductModel
+public class Product
 {
     private String productName;
     private String productImage;
     private int productPrice;
+    private String productCategory;
+    private int productId;
 
-    public ProductModel(String productName, String productImage, int productPrice) 
+    public Product(String productName, String productImage, int productPrice, String productCategory) 
     {
         this.productName = productName;
         this.productImage = productImage;
         this.productPrice = productPrice;
+        this.productCategory=productCategory;
     }
 
+    
+    public Product(int id, String name, String image, int price, String category) {
+    this.productId = id;
+    this.productName = name;
+    this.productImage = image;
+    this.productPrice = price;
+    this.productCategory= category;
+}
+    
+    
+    
+    
+    
+    
+    
+    
     public String getProductName() {
         return productName;
     }
@@ -44,4 +63,22 @@ public class ProductModel
     public void setProductPrice(int productPrice) {
         this.productPrice = productPrice;
     } 
+    
+    public String getProductCategory() {
+        return productCategory;
+    }
+
+    public void setProductCategory(String productCategory) {
+        this.productCategory = productCategory;
+    }
+
+   public int getProductId() {
+    return productId;
+}
+    
+public void setProductId(int productId) {
+    this.productId = productId;
+}
+
+
 }
