@@ -65,12 +65,16 @@ public class Contact extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 28)); // NOI18N
         jLabel1.setText("Contact Us");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 6, -1, 50));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, -1, 50));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("Get in Touch and Us Know How We Can Help.");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 62, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, -1, -1));
 
+        jPanel2.setBackground(new java.awt.Color(255, 183, 77));
+        jPanel2.setForeground(new java.awt.Color(44, 44, 44));
+
+        helpsupport.setBackground(new java.awt.Color(44, 44, 44));
         helpsupport.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         helpsupport.setText("Help&Support");
 
@@ -124,6 +128,8 @@ public class Contact extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 125, -1, 100));
 
+        jPanel3.setBackground(new java.awt.Color(255, 243, 224));
+
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         jLabel3.setText("Address");
 
@@ -172,6 +178,8 @@ public class Contact extends javax.swing.JFrame {
         );
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(354, 125, -1, 100));
+
+        jPanel4.setBackground(new java.awt.Color(224, 247, 250));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setText("Phone");
@@ -237,6 +245,8 @@ public class Contact extends javax.swing.JFrame {
         );
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 261, 200, 100));
+
+        jPanel5.setBackground(new java.awt.Color(237, 231, 246));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel7.setText("Email");
