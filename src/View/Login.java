@@ -177,6 +177,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 70, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void LoginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginBtnActionPerformed
@@ -184,7 +185,8 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_LoginBtnActionPerformed
 
     private void SignupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignupBtnActionPerformed
-        // TODO add your handling code here:
+this.dispose(); // Close current dashboard
+        new SignUp().setVisible(true);          // TODO add your handling code here:
     }//GEN-LAST:event_SignupBtnActionPerformed
 
     private void EmailtextFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_EmailtextFocusGained

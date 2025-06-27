@@ -184,6 +184,7 @@ public class SignUp extends javax.swing.JFrame {
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 490, 510));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void UsernameTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsernameTextActionPerformed
