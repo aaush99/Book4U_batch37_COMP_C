@@ -4,7 +4,7 @@
  */
 package View;
 import java.awt.event.ActionListener;
-import controller.LoginController ;
+import Controller.LoginController ;
 /**
  *
  * @author Nitro

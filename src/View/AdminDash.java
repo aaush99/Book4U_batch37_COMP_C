@@ -4,14 +4,18 @@
  */
 package View;
 
+import controller.SignUpController;
+import java.awt.Color;
 import java.awt.event.ActionListener;
 import javax.swing.JPanel;
 import java.awt.Container;
+import java.awt.FlowLayout;
 import java.awt.Panel;
 import java.awt.event.ActionListener;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+
 /**
  *
  * @author Nitro
@@ -25,6 +29,14 @@ public class AdminDash extends javax.swing.JFrame {
      */
     public AdminDash() {
         initComponents();
+            productPanelReal.setLayout(new BoxLayout(productPanelReal, BoxLayout.Y_AXIS));
+
+        
+        
+        // Correct
+
+        
+         
         // Change this in your AdminDash constructor or initComponents()
     }
 
@@ -43,11 +55,11 @@ public class AdminDash extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        Refresh = new javax.swing.JButton();
         Parent = new javax.swing.JPanel();
-        Orderpanel = new javax.swing.JPanel();
         Bookpanel = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jPanel3 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         productPanelReal = new javax.swing.JPanel();
         productName = new javax.swing.JTextField();
         productCategory = new javax.swing.JTextField();
@@ -58,6 +70,7 @@ public class AdminDash extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        Orderpanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -68,6 +81,7 @@ public class AdminDash extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(255, 102, 51));
         jButton1.setFont(new java.awt.Font("Lucida Fax", 1, 12)); // NOI18N
         jButton1.setText("Manage Books");
+        jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -87,7 +101,7 @@ public class AdminDash extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(680, 130, 200, 50);
 
-        jButton3.setBackground(new java.awt.Color(204, 204, 204));
+        jButton3.setBackground(new java.awt.Color(255, 204, 204));
         jButton3.setFont(new java.awt.Font("Lucida Fax", 1, 12)); // NOI18N
         jButton3.setText("Logout");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -104,32 +118,36 @@ public class AdminDash extends javax.swing.JFrame {
         jPanel1.add(jLabel9);
         jLabel9.setBounds(20, 130, 340, 50);
 
-        jLabel10.setFont(new java.awt.Font("Lucida Fax", 1, 40)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Lucida Fax", 1, 45)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 102, 0));
         jLabel10.setText("Book4U");
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(20, 10, 180, 70);
+        jLabel10.setBounds(20, 10, 210, 70);
+
+        Refresh.setBackground(new java.awt.Color(255, 204, 204));
+        Refresh.setFont(new java.awt.Font("Lucida Fax", 1, 12)); // NOI18N
+        Refresh.setText("Refresh");
+        jPanel1.add(Refresh);
+        Refresh.setBounds(690, 20, 100, 40);
 
         Parent.setLayout(new java.awt.CardLayout());
 
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(productPanelReal, javax.swing.GroupLayout.PREFERRED_SIZE, 806, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 23, Short.MAX_VALUE))
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(productPanelReal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 834, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(productPanelReal, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 22, Short.MAX_VALUE))
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(productPanelReal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jScrollPane2.setViewportView(jPanel3);
+        jScrollPane2.setViewportView(jPanel2);
 
         productImage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -174,9 +192,8 @@ public class AdminDash extends javax.swing.JFrame {
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 805, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 811, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         BookpanelLayout.setVerticalGroup(
             BookpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -200,24 +217,20 @@ public class AdminDash extends javax.swing.JFrame {
                 .addGap(28, 28, 28)
                 .addComponent(addProduct, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(BookpanelLayout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 17, Short.MAX_VALUE))
+            .addComponent(jScrollPane2)
         );
+
+        Parent.add(Bookpanel, "card3");
 
         javax.swing.GroupLayout OrderpanelLayout = new javax.swing.GroupLayout(Orderpanel);
         Orderpanel.setLayout(OrderpanelLayout);
         OrderpanelLayout.setHorizontalGroup(
             OrderpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OrderpanelLayout.createSequentialGroup()
-                .addComponent(Bookpanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGap(0, 940, Short.MAX_VALUE)
         );
         OrderpanelLayout.setVerticalGroup(
             OrderpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OrderpanelLayout.createSequentialGroup()
-                .addComponent(Bookpanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGap(0, 476, Short.MAX_VALUE)
         );
 
         Parent.add(Orderpanel, "card3");
@@ -310,8 +323,10 @@ public class AdminDash extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         this.dispose(); // Close current dashboard
-        new Login().setVisible(true);          // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+
+        SignUp signup = new SignUp();
+        SignUpController contr = new SignUpController(signup);
+        contr.open();    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
                
@@ -335,6 +350,7 @@ public class AdminDash extends javax.swing.JFrame {
     private javax.swing.JPanel Bookpanel;
     private javax.swing.JPanel Orderpanel;
     private javax.swing.JPanel Parent;
+    private javax.swing.JButton Refresh;
     private javax.swing.JButton addProduct;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -346,7 +362,7 @@ public class AdminDash extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField productCategory;
     private javax.swing.JTextField productImage;
@@ -381,4 +397,6 @@ public class AdminDash extends javax.swing.JFrame {
     {
    return addProduct;
 }
+   
+ 
 }
