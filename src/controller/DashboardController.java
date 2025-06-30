@@ -15,6 +15,7 @@ import javax.swing.JPanel;
 import Model.Product;
 import View.AdminDash;
 import View.ProductCard;
+import java.util.ArrayList;
 import javax.swing.BoxLayout;
 
 
@@ -29,6 +30,23 @@ public class DashboardController {
     private final AdminDash dashboardView;
     private Product selectedProductForEdit = null;
 
+    
+     private List<ProductObserver> observers = new ArrayList<>();
+    
+    // Change from static to instance method
+    public void addObserver(ProductObserver observer) {
+        observers.add(observer);
+    }
+    
+    // Change from static to instance method
+    public void removeObserver(ProductObserver observer) {
+        observers.remove(observer);
+    }
+    
+    
+    
+    
+    
     
     private void loadAllProducts() {
     List<Product> products = productDao.getAllProducts();
@@ -97,6 +115,10 @@ private void clearFields() {
 
     public void close() {
         this.dashboardView.dispose();
+    }
+
+    List<Product> getAllProducts() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
    class AddProductListener implements ActionListener {
