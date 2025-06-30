@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package controller;
+package Controller;
 
+import Controller.DashboardController;
 import Dao.UserDao;
 import Model.LoginRequest;
 import Model.UserData;
@@ -37,6 +38,9 @@ public class LoginController {
     }
 
     class AddUserListener implements ActionListener {
+
+        private DashboardController controller;
+        private DashboardController controlleradmin;
         @Override
         public void actionPerformed(ActionEvent e) {
             try {
@@ -58,12 +62,20 @@ public class LoginController {
                     // Check if user is admin
                     if (userDao.isAdmin(loginUser)) {
                         JOptionPane.showMessageDialog(userView, "Admin Login Successful");
-                        AdminDash adminDashboard = new AdminDash();
-                        adminDashboard.setVisible(true);
+                         AdminDash dashboardView = new  AdminDash();                 
+                         DashboardController controller= new DashboardController(dashboardView);  
+                         controller.open();  
+                      
+                  
                     } else {
                         JOptionPane.showMessageDialog(userView, "Login Successful");
-                        Dash userDashboard = new Dash();
-                        userDashboard.setVisible(true);
+                        Dash dashView = new Dash();
+                        CustomerDashboardController adminController=new CustomerDashboardController(dashView, controlleradmin);
+                        adminController.open();
+
+//Dashboard dashboard = new Dashboard();
+////DashboardController dashboardController = new DashboardController(dashboard);
+//dashboardController.open(); 
                     }
                     close();
                 }
