@@ -3,34 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/Settings.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/ForgotPassword2.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/ForgotPassword.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/Dash.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/image%2010.png</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/image%2011%20(1)%20(1).png</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/image%2011%20(1).png</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/image%2012.jpg</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/image%2012.png</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/Sett.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/lgoin%20background%205.jpg</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/Database/Database.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/bookforyou/BookForYou.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/Model/LoginRequest.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/Model/UserData.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/Dao/UserDao.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/Login.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/controller/LoginController.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/controller/SignUpController.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/SignUp.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/Database/Mysql.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/Model/Product.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/86e9c178dfec4dcd38c958a24734312006b04bf2.jpg</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/AdminDash.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/Dao/ProductDao.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/controller/DashboardController.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/ProductCard.java</file>
-            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/book4u/src/View/book.jpg</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/View/Dash.java</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/View/CustomerProductCard.java</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/controller/CustomerDashboardController.java</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/View/cart_orders.java</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/View/AdminDash.java</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/View/ProductCard.java</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/controller/ProductObserver.java</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/controller/DashboardController.java</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/bookforyou/BookForYou.java</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/controller/LoginController.java</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/Dao/ProductDao.java</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/View/Login.java</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/controller/SignUpController.java</file>
+            <file>file:/C:/Users/Nitro/OneDrive/Desktop/aeswecomeback/mergepaxi/Book4U_batch37_COMP_C/src/View/SignUp.java</file>
         </group>
     </open-files>
 </project-private>
