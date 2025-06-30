@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 import Model.UserData;
 import View.SignUp;
 import View.Login;
-
+import Controller.LoginController;
 /**
  *
  * @author User
