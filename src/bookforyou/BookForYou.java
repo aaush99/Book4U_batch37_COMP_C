@@ -3,8 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package bookforyou;
+import Controller.CustomerDashboardController;
 import Controller.DashboardController;
 import View.AdminDash;
+import View.Dash;
 import View.SignUp;
 import controller.SignUpController;
 /**
@@ -13,19 +15,27 @@ import controller.SignUpController;
  */
 public class BookForYou {
 
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
         
-//        SignUp signup = new SignUp();
-//        SignUpController contr = new SignUpController(signup);
-//        contr.open();
-        AdminDash DashboardForm = new  AdminDash();                 
-        DashboardController controller= new DashboardController(DashboardForm);  
-        controller.open();  
-        
-    }
+        SignUp signup = new SignUp();
+        SignUpController contr = new SignUpController(signup);
+        contr.open();
+////        
+//      AdminDash dashboardView = new  AdminDash();                 
+//       DashboardController controller= new DashboardController(dashboardView);  
+//       controller.open();  
+// 
+//          Dash dashView=new Dash();
+//          CustomerDashboardController contro = new CustomerDashboardController(dashView, controller);
+//          contro.open();
+          
+
+
     
+}
 }
