@@ -4,6 +4,11 @@
  */
 package View;
 
+import controller.ReportController;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.File;
+import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 
 /**
@@ -47,7 +52,7 @@ public class ReportOnIssue extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Report a Problem");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Lucida Fax", 1, 11)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(153, 153, 153));
         jLabel2.setText("Summary");
 
@@ -59,7 +64,7 @@ public class ReportOnIssue extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Lucida Fax", 1, 11)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(153, 153, 153));
         jLabel3.setText("Details");
 
@@ -70,7 +75,7 @@ public class ReportOnIssue extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Lucida Fax", 1, 11)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(153, 153, 153));
         jLabel4.setText("Severity");
 
@@ -81,7 +86,7 @@ public class ReportOnIssue extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Lucida Fax", 1, 11)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(153, 153, 153));
         jLabel5.setText("Attachment");
 
@@ -94,8 +99,20 @@ public class ReportOnIssue extends javax.swing.JFrame {
         Cancel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         Cancel.setText("Cancel");
         Cancel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Cancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CancelActionPerformed(evt);
+            }
+        });
 
         AttachmentLabel.setBackground(new java.awt.Color(153, 153, 153));
+        AttachmentLabel.setText("                                                                                Upload a File");
+        AttachmentLabel.setBorder(javax.swing.BorderFactory.createCompoundBorder(null, javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        AttachmentLabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AttachmentLabelMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -113,7 +130,7 @@ public class ReportOnIssue extends javax.swing.JFrame {
                             .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 626, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel5)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(168, 168, 168)
                         .addComponent(Cancel, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -167,6 +184,29 @@ public class ReportOnIssue extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
+    private void AttachmentLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AttachmentLabelMouseClicked
+        // TODO add your handling code here:
+        AttachmentLabel.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                JFileChooser chooser = new JFileChooser();
+                int result = chooser.showOpenDialog(null);
+
+                if (result == JFileChooser.APPROVE_OPTION) {
+                    File selectedFile = chooser.getSelectedFile();
+                    String path = selectedFile.getAbsolutePath();
+                    AttachmentLabel.setText(path); // Show path in label
+                }
+            }
+        });
+    }//GEN-LAST:event_AttachmentLabelMouseClicked
+
+    private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+        Helpandsupport hel = new Helpandsupport();
+        hel.setVisible(true);
+    }//GEN-LAST:event_CancelActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -200,6 +240,8 @@ public class ReportOnIssue extends javax.swing.JFrame {
                 new ReportOnIssue().setVisible(true);
             }
         });
+        
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -217,9 +259,11 @@ public class ReportOnIssue extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     
-    public void addSendButtonListener(java.awt.event.ActionListener listener) {
-        AttachmentLabel.addActionListener(listener);
-    }
+//    public void addSendButtonListener(java.awt.event.ActionListener listener) {
+//        AttachmentLabel.addActionListener(listener);
+//    }
+    
+    
     
     public JLabel getAttachmentLabel() {
        return AttachmentLabel;

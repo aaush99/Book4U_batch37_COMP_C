@@ -4,6 +4,7 @@
  */
 package View;
 
+import controller.ReportController;
 import java.awt.event.ActionListener;
 
 /**
@@ -277,14 +278,22 @@ public class Helpandsupport extends javax.swing.JFrame {
 
     private void faqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_faqActionPerformed
         // TODO add your handling code here:
+        FAQ faq = new FAQ();
+        faq.setVisible(true);
     }//GEN-LAST:event_faqActionPerformed
 
     private void contactsupportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contactsupportActionPerformed
         // TODO add your handling code here:
+        Contact cnt = new Contact();
+        cnt.setVisible(true);
     }//GEN-LAST:event_contactsupportActionPerformed
 
     private void reportonissueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportonissueActionPerformed
         // TODO add your handling code here:
+        ReportOnIssue roi = new ReportOnIssue();
+        this.dispose();
+        ReportController controller = new ReportController(roi);
+        controller.open();
     }//GEN-LAST:event_reportonissueActionPerformed
 
     private void homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeActionPerformed
