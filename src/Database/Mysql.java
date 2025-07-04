@@ -11,12 +11,12 @@ public abstract class Mysql implements Database {
     public Connection openConnection() {
         try{
             String username = "root";
-            String password = "killerdragon@731";
-            String database = "Book4u";
+            String password = "1234";
+            String database = "book4uu";
             Connection connection;
             connection = DriverManager.getConnection(
                     
-            "jdbc:mysql://127.0.0.1:3306/" + database, username, password);
+            "jdbc:mysql://localhost:3306/" + database, username, password);
             
             if (connection == null){
                 System.out.println("database connection fail");
